@@ -91,6 +91,25 @@
 
   </div>
 </div>
-
+<div class="main-content">
+  <iframe name="content" src="welcome.html"></iframe>
+</div>
+  <script>
+    fuction searchChapters()
+    {
+      let input()=document.getElementById("search").value.toLowerCase();
+      let links=document.querySelectorAll(".sidebar a");
+      links.forEach(function(link) {
+        if
+          (link.textcontent.toLowerCase().includes(input)) {
+            link.style.display ="block";
+          }
+        else {
+          link.style.display="none";
+        }
+      });
+    }
+  </script>
+  
 </body>
 </html>
